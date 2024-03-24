@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <!-- header -->
+    <section class="sub-header">
+     <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <!-- for making responsive website use this remaining code of @media -->
+            <i class="fa fa-times"aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true"
+        onclick="showMenu()"
+        ></i>
+    </nav>
+   
+   <h1>Our Courses</h1>
+</section>
+
+<!-- ----course----->
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>Diverse courses fostering innovation, excellence, and global competitiveness.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Computer Science Engineering</h3>
+            <p> Equips students with comprehensive knowledge of software development, networking, 
+                and artificial intelligence, preparing them for roles in technology-driven industries and research.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Biotechnology</h3>
+            <p>Integrates biology and technology, enabling students to explore genetic engineering, pharmaceuticals, and environmental solutions, fostering advancements in healthcare, agriculture, and sustainable development.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Business Administration</h3>
+            <p>Offers holistic understanding of management principles, strategic planning, and entrepreneurship, empowering students with leadership skills for corporate success, innovation, and societal impact.
+            </p>
+        </div>
+    </div>
+</section>
+
+  <!-- facilities -->
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>State-of-the-art infrastructure supporting research, learning, and holistic development.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png" >
+            <h3>World Class Library</h3>
+            <p>Cutting-edge library equipped with vast resources, advanced technology, and expert support, fostering academic excellence and innovation.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png" >
+            <h3>Largest Play Ground</h3>
+            <p>Expansive playground offering diverse sports facilities, promoting physical well-being, teamwork, and recreational activities for students and athletes.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png" >
+            <h3>Tasty & Healthy Food</h3>
+            <p>Nutritious, flavorful cuisine options catering to diverse tastes, promoting well-being and enhancing the campus dining experience.</p>
+        </div>
+    </div>
+   </section>
+
+
+<!-- footer -->
+<section class="footer">
+<h4>About Us</h4>
+<p>As India's premier educational institution, we're committed to excellence in academia, research, and holistic student development. With state-of-the-art facilities,<br>
+     renowned faculty, and a diverse student body, we foster innovation, leadership, and societal impact, <br>
+     shaping the future of our nation and beyond
+</p>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+   </div>
+   <p>Made with <i class="fa fa-heart-o"></i> by OdeToCode</p>
+</section>
+
+  
+    <!-- javascript for toggle management -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <!-- header -->
+    <section class="sub-header">
+     <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <!-- for making responsive website use this remaining code of @media -->
+            <i class="fa fa-times"aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true"
+        onclick="showMenu()"
+        ></i>
+    </nav>
+   
+   <h1>Our Certificate & Online Programs For 2023</h1>
+</section>
+
+<!-- -----blog page content----->
+<section class="blog-content">
+<div class="row">
+    <div class="blog-left">
+        <img src="images/certificate.jpg">
+        <h2>Our Certificate & Online Programs For 2023</h2>
+        <p>
+            Dr. Bhimrao Ambedkar University, Agra, offers a diverse range of certificate and online programs tailored to meet the
+            needs of modern learners. These programs are designed to provide flexibility and accessibility, allowing individuals to
+            pursue their educational goals while balancing other commitments. With a focus on quality and relevance, the
+            university's certificate programs cover various fields such as computer applications, language studies, business
+            management, and vocational skills enhancement.
+        </p> <br>
+        <p>The online programs offered by Dr. Bhimrao Ambedkar University leverage technology to deliver engaging and interactive
+        learning experiences. Through multimedia content, virtual classrooms, and online forums, students can access course
+        materials, interact with instructors, and collaborate with peers from anywhere in the world. Whether it's a short-term
+        certificate course or a comprehensive online degree program, the university ensures that students receive the same level
+        of academic rigor and support as their on-campus counterparts.</p>
+            <br>
+            <p>One of the key advantages of the certificate and online programs at Dr. Bhimrao Ambedkar University is their
+            affordability and accessibility. By eliminating the need for physical attendance and offering resources online, the
+            university makes quality education more attainable for a wide range of learners, including working professionals,
+            homemakers, and individuals residing in remote areas. Additionally, the flexible scheduling options allow students to
+            customize their learning experience according to their personal and professional commitments.</p>
+            <br>
+            <p>Furthermore, the certificate and online programs at Dr. Bhimrao Ambedkar University are constantly updated to reflect
+            the latest industry trends and advancements. This ensures that graduates are equipped with the knowledge and skills
+            needed to thrive in today's competitive job market. Whether students are looking to enhance their existing skills,
+            explore new career opportunities, or pursue lifelong learning, the certificate and online programs at Dr. Bhimrao
+            Ambedkar University provide a pathway to personal and professional growth.</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter email">
+                        <textarea row="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+    </div>
+    <div class="blog-right">
+        <h3>Posts Categories</h3>
+        <div>
+            <span>Business Analytics</span>
+            <span>21</span>
+        </div>
+
+        <div>
+            <span>Data Science</span>
+            <span>28</span>
+        </div>
+
+        <div>
+            <span>Machine Learning</span>
+            <span>15</span>
+        </div>
+
+        <div>
+            <span>Computer Science</span>
+            <span>34</span>
+        </div>
+    
+        <div>
+            <span>AutoCAD</span>
+            <span>42</span>
+        </div>
+
+        <div>
+            <span>Journalism</span>
+            <span>22</span>
+        </div>
+
+        <div>
+            <span>Commerce</span>
+            <span>30</span>
+        </div>
+    </div>
+</div>
+</section>
+ 
+
+
+<!-- footer -->
+<section class="footer">
+<h4>About Us</h4>
+<p>As India's premier educational institution, we're committed to excellence in academia, research, and holistic student development. With state-of-the-art facilities,<br>
+     renowned faculty, and a diverse student body, we foster innovation, leadership, and societal impact, <br>
+     shaping the future of our nation and beyond
+</p>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+   </div>
+   <p>Made with <i class="fa fa-heart-o"></i> by OdeToCode</p>
+</section>
+
+  
+    <!-- javascript for toggle management -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

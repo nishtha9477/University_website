@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <!-- header -->
+    <section class="sub-header">
+     <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <!-- for making responsive website use this remaining code of @media -->
+            <i class="fa fa-times"aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true"
+        onclick="showMenu()"
+        ></i>
+    </nav>
+   <h1>Contact Us</h1>
+</section>
+
+<section class="location">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14193.501335727165!2d78.01007463233749!3d27.20736335726135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397470ac00000001%3A0x5049a955812254cd!2sDr%20Bhimrao%20Ambedkar%20University!5e0!3m2!1sen!2sin!4v1711297451315!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Paliwal Park, Kamla Nagar</h5>
+                    <p>Agra, Uttar Pradesh, IN</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+91 8090312273</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@odetocode.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+ <div class="contact-col">
+        <form action="">
+                <input type="text"  placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter email address" required>
+                <input type="text"  placeholder="Enter your subject" required>
+                <textarea rows="8"  placeholder="Message" required></textarea> <br>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+ </div>
+    </div>
+</section>
+
+<!-- footer -->
+<section class="footer">
+<h4>About Us</h4>
+<p>As India's premier educational institution, we're committed to excellence in academia, research, and holistic student development. With state-of-the-art facilities,<br>
+     renowned faculty, and a diverse student body, we foster innovation, leadership, and societal impact, <br>
+     shaping the future of our nation and beyond
+</p>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+   </div>
+   <p>Made with <i class="fa fa-heart-o"></i> by OdeToCode</p>
+</section>
+
+
+    <!-- javascript for toggle management -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
